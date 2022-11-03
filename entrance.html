@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="./entrance.css">
+</head>
+<body>
+	
+<div class="container">
+	<div class="title">
+		<div id="btn" style="left: 0px;"></div>
+		<button type="button" class="toggle-btn" onclick="login()">CORP</button>
+	                   <button type="button" class="toggle-btn" onclick="register()" style="padding-left: 43px;padding-right: 0px;">DEPOSITOR</button></div>
+	<form action="#" id="login">
+		<div class="user-details">
+			<div class="input-box">
+				<span class="details">Entrez votre nom:</span>
+				<input type="text" placeholder="Enter your name" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Sub-division</span>
+				<input type="text" placeholder="Enter  sub-division" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Profession</span>
+				<input type="text" placeholder="Enter Profession" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Religion</span>
+				<input type="text" placeholder="Enter Religion" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Date of birth</span>
+				<input type="date" placeholder="Enter date of birth " required>
+			</div>
+			<div class="input-box">
+				<span class="details">Familly situation</span>
+				<input type="text" placeholder="Enter marital status" required>
+			</div>
+		</div>
+          <div genter>
+          	<p>Genter</p>
+          	<input type="checkbox" class="check-box"><span>male</span>
+          	<input type="checkbox" class="check-box"><span>female</span>
+          </div>
+			<div class="button" style="margin-top: 0px;">
+				<input type="button" value="NEXT" onclick="register()" style="margin-left: 250px;
+    margin-bottom: 250px;">
+			</div>
+	</form>
+	<form action="#" id="register" style="left: -610px;">
+		<div class="user-details">
+			<div class="input-box">
+				<span class="details">Name and surname</span>
+				<input type="text" placeholder="Enter full name" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Relationship</span>
+				<input type="text" placeholder="relation with the death" required>
+			</div>
+			<div class="input-box">
+				<span class="details">CNI number</span>
+				<input type="text" placeholder="Enter cni number" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Telephone</span>
+				<input type="text" placeholder="Enter tel number" required>
+			</div>
+			<div class="input-box">
+				<span class="details">Retrivement date</span>
+				<input type="text" placeholder="Date of retrive" required>
+			</div>
+			<div class="button">
+				<input type="submit" value="Registrater" style="margin-top: -25px; margin-right: 161px; margin-left: 100px;
+				width: 394px;">
+			</div>
+		</div>
+	</form>
+</div>
+<script>
+	var x=document.getElementById("login");
+	var y=document.getElementById("register");
+	var z=document.getElementById("btn");
+
+	function register(){
+		x.style.left = "-610px";
+		y.style.left = "41px";
+        z.style.left = "110px";
+	}
+	function login(){
+		y.style.left = "-610px";
+		x.style.left = "41px";
+        z.style.left = "0px";
+	}
+</script>
+</body>
+</html>

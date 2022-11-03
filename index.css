@@ -1,0 +1,249 @@
+:root{
+    --primary-color:#047aed;
+    --primary-light-color:#1296ee;
+    --shadow:#b4becd;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.5s  step-end;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+h1,h2{
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+}
+/* Navebar*/
+.logo img{
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.navbar{
+    background-color:var(--primary-color) ;
+    color: #fff;
+    height: 70px;
+}
+.navbar .flex{
+    justify-content: space-between;
+    overflow: visible;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px solid #ddd;
+    transition: all 1s ease-in;
+}
+/*showcase*/
+.showcase{
+    height: 400px;
+    background-color: var(--primary-light-color);
+    color: #fff;
+    position: relative;
+}
+.showcase h1 {
+    font-size: 40px;
+}
+.showcase p {
+    margin: 0 7px;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase .form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 500px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+.space-above{
+    width: 50%;
+}
+.showcase-form input[type='text'],
+.showcase-form input[type='email'],
+.showcase-form input[type='tel'],
+.showcase-form input[type='number'],
+.showcase-form  input[type='password']{
+    border: 0;
+    border-bottom: 1px solid var(--shadow);
+    width: 80%;
+    padding: 3px;
+    font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+
+.showcase-text{
+    top :10%;
+    text-align: center;
+    line-height: 20px;
+}
+/*publicities*/
+.pub-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.pub{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.pub img{
+    width: 100%;
+    border-radius: 7%;
+    cursor: pointer;
+}
+/*footer*/
+footer{
+ color: #333;
+ background-color: var(--primary-color);
+}
+footer nav ul li a{
+    color: #ddd;
+}
+/*utilities*/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+}.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.btn-outline{
+    margin-top: 8px;
+    background-color: var(--primary-light-color);
+    border: 1px solid #fff;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.form-control a{
+    color: var(--primary-color);
+}
+/* On mobile devices */
+@media (max-width: 500px) {
+    .navbar{
+        height: 100%;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .showcase-form input[type='text'],
+    .showcase-form input[type='email'],
+    .showcase-form input[type='tel'],
+    .showcase-form input[type='number'],
+    .showcase-form  input[type='password']{
+        border: 0;
+        border-bottom: 1px solid var(--shadow);
+        width: 100%;
+        padding: 3px;
+        font-size: 11px;
+    }
+    .space-above{
+        width: 100%;
+    }
+    .container{
+        max-width: fit-content;
+        display: inline-block;
+        margin: 0 auto;
+        overflow: visible;
+        padding: 10 40px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+.showcase .grid {
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+    display: inline;
+    overflow: -moz-hidden-unscrollable;
+}
+}

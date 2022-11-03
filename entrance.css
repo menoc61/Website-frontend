@@ -1,0 +1,119 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+display:flex;
+height:100vh;
+justify-content:center;
+align-items:center;
+padding: 10px;
+background:#7b8484;
+}
+.container{
+	width: 657px;
+	background:#fff;
+	padding: 2px;
+	border-radius: 15px;
+	position: relative;
+	margin:6% auto;
+	height: 566px;
+	overflow: hidden;
+}
+.container .title{
+	position: relative;
+	margin:35px auto;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+	width: 253px;
+}
+.toggle-btn{
+	padding: 10px 26px;
+	cursor: pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+    position: relative;
+}
+#login{
+	left: 50px;
+	position: absolute;
+	left: 41px;
+}	
+#register{
+	left: 768px;
+	position: absolute;
+	width: 700px;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 137px;
+	height: 100%;
+	background:linear-gradient(to right,#ff105f,#ffad06);
+	border-radius: 30px;
+	transition: .5s;
+}
+.check-box{
+	margin: 30px 10px 30px 0;
+}
+.genter span{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+.container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 600px;
+}
+.container .user-details .input-box{
+	margin-bottom: 15px;
+    width: 260px;
+}
+.user-details .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.user-details .input-box input{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:focus{
+	border-color: #9b59b6;
+}
+form .button{
+	height: 45px;
+	margin: 45px 0;
+
+}
+form .button input{
+	height: 100%;
+	width: 57%;
+	margin-left: 48px;
+	outline: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	background:#174bbf;
+	border-radius: 15px;
+	box-shadow: 0px 10px 10px
+rgba(0,0,0,0.1);
+}
+form .button input:hover{
+	background:#174bbf;
+}
